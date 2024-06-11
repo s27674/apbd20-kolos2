@@ -35,7 +35,7 @@ public class ItemController : ControllerBase
             Titles = e.CharacterTitels.Select(e => new TitleDTO
             {
                 title = e.Title.Name,
-                acquiredAt = DateTime.Parse("2002-04-13")
+                acquiredAt = e.AcquiredAt
             }).ToList()
         }));
 
